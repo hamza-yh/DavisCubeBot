@@ -1,0 +1,43 @@
+{
+    "name": "daviscubebot",
+    "version": "1.0.0",
+    "description": "Discord Bot for Davis Cube Club",
+    "homepage": "https://github.com/hamza-yh/DavisCubeBot#readme",
+    "bugs": {
+        "url": "https://github.com/hamza-yh/DavisCubeBot/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/hamza-yh/DavisCubeBot.git"
+    },
+    "license": "ISC",
+    "author": "",
+    "type": "module",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "npx tsc && echo 'Compiled Successfully\n' && node dist/src/index.js",
+        "win": "npx prettier -w . > NUL && npx tsc && node dist/src/index.js",
+        "format": "npx prettier -w ."
+    },
+    "dependencies": {
+        "@google-cloud/local-auth": "^2.1.0",
+        "@resvg/resvg-js": "^2.6.0",
+        "canvas": "^3.1.0",
+        "cheerio": "^1.0.0",
+        "cstimer_module": "^0.1.2",
+        "dccdiscordbot": "file:",
+        "discord-api-types": "^0.37.68",
+        "discord.js": "^14.15.3",
+        "googleapis": "^105.0.0",
+        "playwright": "^1.50.1",
+        "puppeteer": "^24.2.1"
+    },
+    "devDependencies": {
+        "prettier": "^3.2.5",
+        "typescript": "^5.7.3"
+    },
+    "engines": {
+        "node": ">=18.12.0"
+    }
+}
