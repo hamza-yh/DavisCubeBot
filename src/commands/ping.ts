@@ -1,3 +1,5 @@
+// to test if your bot is working. use this as a template for other commands.
+
 import { ChatInputCommandInteraction, SlashCommandBuilder } from 'discord.js';
 
 const data = new SlashCommandBuilder().setName('ping').setDescription('Replies with Pong!');

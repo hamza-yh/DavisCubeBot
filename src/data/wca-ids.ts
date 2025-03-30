@@ -1,0 +1,28 @@
+const ids = [
+    '2016GUZM13',
+    '2023LOPE85',
+    '2022TOKU02',
+    '2018JIAK01',
+    '2024BERT04',
+    '2013MURU01',
+    '2024WONG08',
+    '2023SHIN31',
+    '2016MARI14',
+    '2011CHOI04',
+    '2012LUGT01',
+    '2018HAFE01',
+    '2024TAND01',
+    '2017GILL06',
+    '2024PHAN09',
+    '2023CACH01',
+    '2019TAMM02',
+    '2024SOLN01',
+    '2019NOMU01',
+    '2014KADA02',
+    '2023KING02',
+    '2025DINH01',
+    '2024LIUT01',
+    '2022HERR09',
+];
+
+export default ids;

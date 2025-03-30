@@ -22,13 +22,20 @@ client.on(Events.InteractionCreate, async interaction => {
             if (!command) {
                 throw new Error(`Received slash command "${interaction.commandName}" but can't find command info.`);
             }
+            //calls the execute() function for the given command
             await command.execute(interaction);
         } catch (error) {
             console.error(error);
-            await interaction.reply({
-                content: `The following error occured during the execution of this command:\n ${error as Error}`,
-                ephemeral: true,
-            });
+            if (interaction.deferred) {
+                await interaction.editReply({
+                    content: `The following error occured during the execution of this command:\n ${error as Error}`,
+                });
+            } else {
+                await interaction.reply({
+                    content: `The following error occured during the execution of this command:\n ${error as Error}`,
+                    ephemeral: true,
+                });
+            }
         }
     }
 });

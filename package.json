@@ -23,17 +23,22 @@
     "dependencies": {
         "@google-cloud/local-auth": "^2.1.0",
         "@resvg/resvg-js": "^2.6.0",
+        "@wca/helpers": "^1.1.5",
         "canvas": "^3.1.0",
         "cheerio": "^1.0.0",
         "cstimer_module": "^0.1.2",
+        "date-fns-tz": "^3.2.0",
         "dccdiscordbot": "file:",
         "discord-api-types": "^0.37.68",
         "discord.js": "^14.15.3",
         "googleapis": "^105.0.0",
+        "p-limit": "^6.2.0",
         "playwright": "^1.50.1",
-        "puppeteer": "^24.2.1"
+        "puppeteer": "^24.2.1",
+        "tz-lookup": "^6.1.25"
     },
     "devDependencies": {
+        "@types/tz-lookup": "^6.1.2",
         "prettier": "^3.2.5",
         "typescript": "^5.7.3"
     },
